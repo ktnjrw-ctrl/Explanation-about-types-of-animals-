@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- هذا السطر مهم جداً لجعل الموقع متوافقاً مع شاشات الجوال -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>موقعي على الجوال</title>
+    
+    <style>
+        /* إعدادات عامة لتناسب الجوال */
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent; /* إخفاء وميض اللمس في الجوال */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* لون خلفية مريح للعين */
+            color: #333;
+            padding-bottom: 60px; /* مساحة سفلية حتى لا يغطي التذييل المحتوى */
+        }
+        
+        /* الترويسة العلوية */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        /* حاوية المحتوى */
+        .content {
+            padding: 15px;
+        }
+
+        /* تصميم البطاقات (Cards) المناسب للجوال */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #2980b9;
+            font-size: 1.3rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* تصميم زر يسهل الضغط عليه بالأصبع */
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        .btn:active {
+            background-color: #2980b9; /* لون عند اللمس */
+        }
+
+        /* التذييل السفلي */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الترويسة -->
+    <header>
+        <h1>موقعي الشخصي</h1>
+    </header>
+
+    <!-- المحتوى مقسم إلى بطاقات -->
+    <div class="content">
+        
+        <div class="card">
+            <h2>مرحباً بك! 👋</h2>
+            <p>هذا القالب مصمم خصيصاً ليظهر بشكل ممتاز ومرتب على شاشات الهواتف المحمولة. تم استخدام نظام البطاقات لفصل المحتوى.</p>
+        </div>
+
+        <div class="card">
+            <h2>قسم المعلومات</h2>
+            <p>يمكنك تغيير النصوص والألوان بكل سهولة من خلال قسم الـ CSS في الأعلى لتناسب ذوقك وتصميمك.</p>
+            <!-- زر تفاعلي -->
+            <button class="btn" onclick="alert('مرحباً بك في عالم البرمجة!')">اضغط هنا للتجربة</button>
+        </div>
+
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
